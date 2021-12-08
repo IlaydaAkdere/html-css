@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300;1,600;1,800&family=Roboto:ital@1&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  background: url(bg.jpg);
+  height: 100vh;
+  background-size: 100% 100%;
+  background-image: url('images/bg.jpg');
+}
+
+.container .navbar {
+  width: 100%;
+  height: 80px;
+  background-color: rgb(22, 112, 214.0);
+}
+
+.navbar .logo {
+  display: inline-block;
+  margin-left: 50px;
+  margin-top: 20px;
+}
+
+.navbar .logo a {
+  text-decoration: none;
+  font-size: 30px;
+  font-family: "Helvetica Neue", Helvetica, Arial;
+  color: #f3f3f3;
+  box-shadow: 9px;
+}
+
+.navbar ul {
+  float: right;
+  margin-right: 20px;
+}
+
+.navbar ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 8px;
+  line-height: 80px;
+}
+
+.navbar ul li a {
+  color: white;
+  text-decoration: none;
+  /* yazı altındakı çizgiyi temizledim */
+  font-size: 20px;
+  padding: 6px 13px;
+  font-family: roboto;
+  transition: 0.5s;
+}
+
+.navbar ul li a.active,
+.navbar ul li a:hover {
+  background-color: #ff6300;
+  border-radius: 2px;
+}
+
+.container.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  /* transform:translate(-50%,-50%); */
+  font-family: sans-serif;
+  user-select: none;
+  /*farklı bir kullanıcı gelip almasın dıye kullandım*/
+}
+
+.center h1 {
+  color: #ffffff;
+  font-size: 70px;
+  width: 900;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: under;
+  margin-top: 100px;
+}
+
+/* .center h2{
+  color:#ffffff;
+  font-size:70;
+  width:885;
+  font-weight:bold;
+  text-align:center;
+  margin-top:10px;
+} */
+
+.center .buttons {
+  text-align: center;
+  display: flex;
+  margin-left: 470px;
+}
+
+.buttons button {
+  height: 50px;
+  width: 150px;
+  font-size: 18px;
+  /* font-family:bold; */
+  color: rgb(211, 179, 179);
+  background-color: rgb(207, 96, 88);
+  border: solid 3px red;
+  cursor: pointer;
+  outline: none;
+  border-radius: 25;
+  transition: 2.5s;
+}
+
+.buttons button:hover {
+  background-color: #fff;
+}
